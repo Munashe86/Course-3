@@ -1,0 +1,65 @@
+/* Base styles */
+:root {
+  --deep-space: #0A1628;
+  --primary: #0093FF;
+  --accent: #00C9FF;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--deep-space);
+  color: white;
+}
+
+/* Error page styles */
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.error-container {
+  max-width: 600px;
+}
+
+.error-container h1 {
+  font-size: 120px;
+  margin: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error-container h2 {
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+.error-container p {
+  font-size: 18px;
+  color: #94A3B8;
+  margin-bottom: 30px;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.home-link:hover {
+  transform: translateY(-2px);
+}
